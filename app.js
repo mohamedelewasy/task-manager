@@ -11,6 +11,7 @@ app.use(express.json());
 
 // routes
 app.use("/api/tasks", taskRouter);
+app.use("/api/products", require("./routes/products"));
 
 // error handler
 app.use(notFound);
